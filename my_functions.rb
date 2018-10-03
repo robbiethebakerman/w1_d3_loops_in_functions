@@ -62,11 +62,3 @@ def get_first_key(hash)
   hash_keys = hash.keys
   return hash_keys[0]
 end
-
-# hash_new = {
-#   name: "robbie",
-#   age: 31,
-#   gender_identity: "male"
-# }
-#
-# p get_first_key(hash_new)
