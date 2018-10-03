@@ -33,3 +33,40 @@ end
 ###################################
 
 # # METHOD 1 # #
+
+# def find_item(array, item)
+#   result = false
+#   for array_item in array
+#     if array_item == item
+#       result = true
+#     end
+#   end
+#   return result
+# end
+
+# # METHOD 1 REFACTORED # #
+
+def find_item(array, item)
+  result = false
+  for array_item in array
+    result = true if array_item == item
+  end
+  return result
+end
+
+###################################
+
+# # METHOD 1 # #
+
+def get_first_key(hash)
+  hash_keys = hash.keys
+  return hash_keys[0]
+end
+
+# hash_new = {
+#   name: "robbie",
+#   age: 31,
+#   gender_identity: "male"
+# }
+#
+# p get_first_key(hash_new)
